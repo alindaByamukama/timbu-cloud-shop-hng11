@@ -2,13 +2,14 @@ import React, {useState} from 'react';
 import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 import { useRouter } from 'next/router';
+import { products } from '@/data/products';
 
 const CartPage: React.FC = () => {
     const router = useRouter();
-    const [cartItems, setCartItems] = useState([
-        {id: 'bamboo-lid', imageUrl: '/images/products/bamboo-lid.png', name: 'Bamboo Lid', price: 20000, quantity: 1  },
-        {id: 'sport', imageUrl: '/images/products/sport.png', name: 'Sport', price: 15000, quantity: 1  },
-    ]);
+    const [cartItems, setCartItems] = useState(products.map(product => ({
+        ...product,
+         quantity: 1,
+    })));
 
     const handleRemove = (id: string) => {
         setCartItems(cartItems.filter(item => item.id !== id));
