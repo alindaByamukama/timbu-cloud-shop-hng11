@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import FooterLink from './FooterLink';
 
 const Footer: React.FC = () => {
   return (
@@ -8,17 +9,17 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="font-bold mb-4">Link</h3>
           <ul>
-            <li className="mb-2"><a href="#categories">Categories</a></li>
-            <li className="mb-2"><a href="#new-arrivals">New Arrivals</a></li>
-            <li className="mb-2"><a href="#contact-us">Contact Us</a></li>
-            <li><a href="#faq">FAQ</a></li>
+          <FooterLink label="Categories" href="#categories" />
+          <FooterLink label="New Arrivals" href="#new-arrivals" />
+          <FooterLink label="Contact Us" href="#contact-us" />
+          <FooterLink label="FAQ" href="#faq" />
           </ul>
         </div>
         <div>
           <h3 className="font-bold mb-4">Legal Information</h3>
           <ul>
-            <li className="mb-2"><a href="#privacy-policy">Privacy Policy</a></li>
-            <li><a href="#terms-of-service">Terms of Service</a></li>
+          <FooterLink label="Privacy Policy" href="#privacy-policy" />
+          <FooterLink label="Terms of Service" href="#terms-of-service" />
           </ul>
         </div>
         <div>
