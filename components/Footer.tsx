@@ -9,17 +9,17 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="font-bold mb-4">Link</h3>
           <ul>
-          <FooterLink label="Categories" href="#categories" />
-          <FooterLink label="New Arrivals" href="#new-arrivals" />
-          <FooterLink label="Contact Us" href="#contact-us" />
-          <FooterLink label="FAQ" href="#faq" />
+            <li><FooterLink label="Categories" href="#categories" /></li>
+            <li><FooterLink label="New Arrivals" href="#new-arrivals" /></li>
+            <li><FooterLink label="Contact Us" href="#contact-us" /></li>
+            <li><FooterLink label="FAQ" href="#faq" /></li>
           </ul>
         </div>
         <div>
           <h3 className="font-bold mb-4">Legal Information</h3>
           <ul>
-          <FooterLink label="Privacy Policy" href="#privacy-policy" />
-          <FooterLink label="Terms of Service" href="#terms-of-service" />
+            <li><FooterLink label="Privacy Policy" href="#privacy-policy" /></li>
+            <li><FooterLink label="Terms of Service" href="#terms-of-service" /></li>
           </ul>
         </div>
         <div>
