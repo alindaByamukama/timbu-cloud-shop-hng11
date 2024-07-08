@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className="logo">
-        <img src="/logo.svg" alt="Logo" />
+        <img src="/vistamart-logo.png" alt="Logo" />
         <span>VistaMart</span>
       </div>
       <nav>
