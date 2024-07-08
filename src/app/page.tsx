@@ -1,8 +1,6 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import ProductCard from "../../components/ProductCard";
-// import Button from "../../components/Button";
-// import MenuLink from "../../components/MenuLink";
 import { products } from "@/data/products";
 
 const HomePage: React.FC = () => {
