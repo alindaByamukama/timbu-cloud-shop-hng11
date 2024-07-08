@@ -1,35 +1,26 @@
 import styled from 'styled-components';
 import React from 'react';
+import Image from 'next/image';
+import { Interface } from 'readline';
 
-const Card = styled.div`
-    @apply bg-white shadow-md rounded-lg overflow-hidden p-4;
-`;
+interface ProductCardProps {
+    name: string;
+    description: string;
+    price: string;
+    imageUrl: string;
+}
 
-const ProductImage = styled.img`
-    @apply w-full h-48 object-cover;
-`;
-
-const ProductInfo = styled.div`
-    @apply mt-4;
-`;
-
-const ProductName = styled.h2`
-    @apply text-lg font-bold;
-`;
-
-const ProductDescription = styled.p`
-    @apply text-gray-500;
-`;
-
-const ProductCard: React.FC<{ name: String; description: String; imageUrl: string }> = ({ name, description, imageUrl }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ name, description, price, imageUrl }) => {
     return (
-        <Card>
-            <ProductImage src={imageUrl} alt={name} />
-            <ProductInfo>
-                <ProductName>{name}</ProductName>
-                <ProductDescription>{description}</ProductDescription>
-            </ProductInfo>
-        </Card>
+        <div className="bg-white shadow-md rounded-lg overflow-hidden p-4 text-center">
+            <Image src={imageUrl} alt={name}  width={200} height={200} className="w-full h-auto object-cover mx-auto" />
+            <div className="mt-4">
+                <h2 className="text-lg font-bold">{name}</h2>
+                <p className="text-gray-500">{description}</p>
+                <p className="text-primary font-bold">{price}</p>
+                <button className="bg-pink-500 text-white rounded-full px-4 py-2 mt-4">Add to Cart</button>
+            </div>
+        </div >
     );
 };
 
