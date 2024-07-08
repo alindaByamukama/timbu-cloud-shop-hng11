@@ -12,6 +12,7 @@ const config: Config = {
         primary: '#00A0E8',
         secondary: '#333333',
         accent: '#FF6F61',
+        bannerLightBlue: '#f0f8ff',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
