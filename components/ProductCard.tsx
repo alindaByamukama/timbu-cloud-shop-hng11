@@ -1,7 +1,6 @@
-import styled from 'styled-components';
 import React from 'react';
 import Image from 'next/image';
-import { Interface } from 'readline';
+import DescriptionLink from './DescriptionLink';
 
 interface ProductCardProps {
     name: string;
@@ -15,7 +14,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, description, price, ima
         <div className="bg-white shadow-md rounded-lg overflow-hidden p-4 text-center">
             <Image src={imageUrl} alt={name}  width={200} height={200} className="w-full h-auto object-cover mx-auto" />
             <div className="mt-4">
-                <h2 className="text-lg font-bold">{name}</h2>
+                <DescriptionLink label={name} href="#" />
                 <p className="text-gray-500">{description}</p>
                 <p className="text-primary font-bold">{price}</p>
                 <button className="bg-pink-500 text-white rounded-full px-4 py-2 mt-4">Add to Cart</button>
