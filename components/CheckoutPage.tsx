@@ -1,55 +1,30 @@
-import React from "react";
-import styled from "styled-components";
+// import React from 'react';
+// import BackLink from '../components/BackLink';
+// import PaymentMethodForm from '../components/PaymentMethodForm';
+// import OrderSummary from '../components/OrderSummary';
 
-const Container = styled.div`
-    @apply container mx-auto px-4;
-`;
+// const CheckoutPage: React.FC = () => {
+//     return (
+//         <div className="min-h-screen bg-gray-100 flex flex-col justify-between">
+//             <header className="py-4 px-8 bg-white shadow-md">
+//                 <BackLink href="/cart" />
+//             </header>
+//             <main className="flex-grow flex flex-col items-center py-8">
+//                 <h1 className="text-2xl font-bold mb-8">Check Out</h1>
+//                 <div className="flex flex-col md:flex-row w-full max-w-5xl px-4 md:px-0 space-y-8 md:space-y-0 md:space-x-8">
+//                     <div className="w-full md:w-2/3 bg-white p-6 rounded-lg shadow-md">
+//                         <PaymentMethodForm />
+//                     </div>
+//                     <div className="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md">
+//                         <OrderSummary />
+//                     </div>
+//                 </div>
+//             </main>
+//             <footer className="py-4 px-8 bg-blue-900 text-white">
+//                 {/* Footer content goes here */}
+//             </footer>
+//         </div>
+//     );
+// };
 
-const Title = styled.div`
-    @apply text-3xl font-bold my-4;
-`;
-
-const CheckoutForm = styled.form`
-    @apply bg-white shadow-md rounded-lg p-8;
-`;
-
-const FormField = styled.div`
-    @apply mb-4;
-`;
-
-const Label = styled.label`
-    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline;
-`;
-
-const Input = styled.input`
-    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading:tight focus:outline-none focus:shadow-outline;
-`;
-
-const Button = styled.button`
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline;
-`;
-
-const CheckoutPage: React.FC = () => {
-    return (
-        <Container>
-            <Title>Checkout</Title>
-            <CheckoutForm>
-                <FormField>
-                    <Label htmlFor="name">Name</Label>
-                    <Input type="text" id="name" placeholder="Your Name" />
-                </FormField>
-                <FormField>
-                    <Label htmlFor="email">Email</Label>
-                    <Input type="email" id="email" placeholder="Your Email" />
-                </FormField>
-                <FormField>
-                    <Label htmlFor="address">Address</Label>
-                    <Input type="text" id="address" placeholder="Your Address" />
-                </FormField>
-                <Button type="submit">Place Order</Button>
-            </CheckoutForm>
-        </Container>
-    );
-};
-
-export default CheckoutPage;
+// export default CheckoutPage;
