@@ -1,6 +1,5 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faSearch, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import MenuLink from './MenuLink';
 import Image from 'next/image';
 
 const Navbar: React.FC = () => {
@@ -12,10 +11,11 @@ const Navbar: React.FC = () => {
           <span className="text-2xl font-bold">VistaMart</span>
         </div>
         <ul className="flex space-x-6 text-lg">
-          <li><a href="#categories" className="hover:text-primary">Categories</a></li>
-          <li><a href="#new-arrivals" className="hover:text-primary">New Arrivals</a></li>
-          <li><a href="#contact-us" className="hover:text-primary">Contact Us</a></li>
-        </ul>
+          <div className="ml-10 space-x-4">
+            <MenuLink label="Categories" href="#categories" />
+            <MenuLink label="New Arrivals" href="#new-arrivals" />
+            <MenuLink label="Contact Us" href="#contact-us" />
+          </div>
         <div className="flex items-center bg-gray-200 rounded-full px-4 py-2">
           <input type="text" placeholder="Search Product" className="bg-transparent outline-none" />
           <button className="ml-2">
