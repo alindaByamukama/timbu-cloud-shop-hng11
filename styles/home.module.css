@@ -1,0 +1,98 @@
+
+/* HOME PAGE STYLES */
+.primary-colors {
+  position: absolute;
+  width: 1440px;
+  height: 537px;
+  top: 104px;
+  background: #F7FCFF;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 657px;
+  height: 326px;
+  left: 100px;
+  top: 96px;
+  isolation: isolate;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  width: 657px;
+  height: 230px;
+  z-index: 0;
+}
+
+.banner-image {
+  position: absolute;
+  width: 682px;
+  height: 420px;
+  left: 558px;
+  top: 19px;
+  z-index: 1;
+}
+
+.discover-products {
+  position: absolute;
+  width: 1240px;
+  height: 1073px;
+  left: 100px;
+  top: 747px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 74px;
+}
+
+.product-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 1240px;
+  height: 458px;
+}
+
+.footer {
+  position: absolute;
+  width: 1440px;
+  height: 415px;
+  left: 0;
+  top: 1908px;
+  background: #00354D;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 176px;
+  position: absolute;
+  width: 1240px;
+  height: 162px;
+  left: 100px;
+  top: 64px;
+}
+
+.header {
+  position: absolute;
+  width: 1440px;
+  height: 104px;
+  left: 0;
+  top: 0;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0;
+  gap: 57px;
+  justify-content: space-between;
+}
