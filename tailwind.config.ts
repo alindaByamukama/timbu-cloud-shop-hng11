@@ -10,8 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#00A0E8',
+        primaryHover: '#D55D51',
         secondary: '#333333',
         accent: '#FF6F61',
+        menuHover: '#F0F0F0',
+        textPrimary: '#2B2B2B',
         bannerLightBlue: '#f0f8ff',
         footerBackgroundColor: '#002e47',
       },
