@@ -27,13 +27,13 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="flex items-center space-x-4 ml-6">
-          <Link href="#account" passHref>
+          <Link href="#account" legacyBehavior>
             <a className="flex items-center hover:text-primary">
               <FontAwesomeIcon icon={faUser} />
               <span className="ml-1">Account</span>
             </a>
           </Link>
-          <Link href="#cart" passHref>
+          <Link href="#cart" legacyBehavior>
             <a className="hover:text-primary">
               <FontAwesomeIcon icon={faShoppingCart} />
             </a>
