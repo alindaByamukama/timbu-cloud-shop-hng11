@@ -26,16 +26,16 @@ const Footer: React.FC = () => {
           <h3 className="font-bold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
             <a href="#facebook">
-              <Image src="/images/fb-icon.png" alt="Facebook" width={54} height={54} />
+              <Image src="/images/socials/fb-icon.png" alt="Facebook" width={54} height={54} />
             </a>
             <a href="#linkedin">
-              <Image src="/images/linkedin-icon.png" alt="LinkedIn" width={54} height={54} />
+              <Image src="/images/socials/linkedin-icon.png" alt="LinkedIn" width={54} height={54} />
             </a>
             <a href="#xtwitter">
-              <Image src="/images/twitter-icon.png" alt="X (Twitter)" width={54} height={54} />
+              <Image src="/images/socials/twitter-icon.png" alt="X (Twitter)" width={54} height={54} />
             </a>
             <a href="#instagram">
-              <Image src="/images/instagram-icon.png" alt="Instagram" width={54} height={54} />
+              <Image src="/images/socials/instagram-icon.png" alt="Instagram" width={54} height={54} />
             </a>
           </div>
         </div>
