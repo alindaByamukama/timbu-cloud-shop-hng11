@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-white p-4 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <Image src="/images/logo.png" alt="VistaMart" width={150} height={40} className="mr-3" />
+          <Image src="/images/vistamart-logo.png" alt="VistaMart" width={150} height={40} className="mr-3" />
           <span className="text-2xl font-bold">VistaMart</span>
         </div>
         <ul className="flex space-x-6 text-lg">
@@ -27,16 +27,16 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="flex items-center space-x-4 ml-6">
-          <Link href="#account" legacyBehavior>
-            <a className="flex items-center hover:text-primary">
+          <Link href="#account">
+            
               <FontAwesomeIcon icon={faUser} />
               <span className="ml-1">Account</span>
-            </a>
+            
           </Link>
-          <Link href="#cart" legacyBehavior>
-            <a className="hover:text-primary">
+          <Link href="#cart">
+            
               <FontAwesomeIcon icon={faShoppingCart} />
-            </a>
+            
           </Link>
         </div>
       </div>

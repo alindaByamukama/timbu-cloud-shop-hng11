@@ -11,9 +11,9 @@ const Banner: React.FC = () => {
           Our eco-friendly water bottles offer sustainable hydration solutions. Enjoy pure refreshment while reducing environmental impact.
         </p>
         <Link href="/shop">
-          <a className="bg-primary text-white py-3 px-6 rounded-full">
+          
             Shop Now
-          </a>
+          
         </Link>
       </div>
       <div className="flex-shrink-0">
