@@ -12,7 +12,6 @@ const Navbar: React.FC = () => {
           <Image src="/images/logo.png" alt="VistaMart" width={150} height={40} className="mr-3" />
           <span className="text-2xl font-bold">VistaMart</span>
         </div>
-        <ul className="flex space-x-6 text-lg">
           <div className="ml-10 space-x-4">
             <MenuLink label="Categories" href="#categories" />
             <MenuLink label="New Arrivals" href="#new-arrivals" />
