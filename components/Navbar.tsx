@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faSearch, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="bg-white p-4 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
