@@ -1,6 +1,8 @@
 import React from 'react';
 import MenuLink from './MenuLink';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar: React.FC = () => {
   return (
