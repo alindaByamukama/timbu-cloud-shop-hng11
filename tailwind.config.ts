@@ -13,6 +13,7 @@ const config: Config = {
         secondary: '#333333',
         accent: '#FF6F61',
         bannerLightBlue: '#f0f8ff',
+        footerBackgroundColor: '#002e47',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
